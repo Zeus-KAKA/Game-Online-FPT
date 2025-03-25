@@ -2,8 +2,8 @@
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 5f;       // Tốc độ di chuyển
-    public float jumpForce = 7f;   // Lực nhảy
+    public float speed = 15f;       // Tốc độ di chuyển
+    public float jumpForce = 20f;   // Lực nhảy
     private bool isGrounded;       // Kiểm tra chạm đất
 
     private Rigidbody2D rb;
