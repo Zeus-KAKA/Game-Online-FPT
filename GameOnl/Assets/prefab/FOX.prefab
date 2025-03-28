@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: -7320599030962461014}
   - component: {fileID: -482992204034334554}
   - component: {fileID: 5216192749226436261}
+  - component: {fileID: -4665905862546319235}
   m_Layer: 0
   m_Name: FOX
   m_TagString: Player
@@ -312,6 +313,7 @@ MonoBehaviour:
   NetworkedBehaviours:
   - {fileID: -482992204034334554}
   - {fileID: 5216192749226436261}
+  - {fileID: -4665905862546319235}
   ForceRemoteRenderTimeframe: 0
 --- !u!114 &-482992204034334554
 MonoBehaviour:
@@ -345,6 +347,21 @@ MonoBehaviour:
   bulletPrefab: {fileID: 699333817703604979, guid: dbc43189fe31e8740aab308cdd312cad, type: 3}
   firePoint: {fileID: 328202294186020485}
   networkRunner: {fileID: 0}
+--- !u!114 &-4665905862546319235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4687501568546465146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 429880d86a5948e4d81780a3a477fff9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMassage: {fileID: 0}
+  inputFieldMessage: {fileID: 0}
+  buttonSend: {fileID: 0}
 --- !u!1001 &8007982538358146596
 PrefabInstance:
   m_ObjectHideFlags: 0
