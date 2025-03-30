@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 400488628478755784}
   - component: {fileID: 5424140388087571991}
   - component: {fileID: 2484402501173088977}
+  - component: {fileID: 1474591942911844370}
   m_Layer: 0
   m_Name: DarkWolf_2d_Grafics
   m_TagString: Untagged
@@ -179,6 +180,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &1474591942911844370
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701079439120639343}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1b1f66b48dd9f1e459fdaa851505c8b4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6035528073933915517
 GameObject:
   m_ObjectHideFlags: 0

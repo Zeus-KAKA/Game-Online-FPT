@@ -3,21 +3,31 @@ using UnityEngine;
 
 public class playerGun : NetworkBehaviour
 {
-    public GameObject bulletPrefab;
-    public Transform firePoint;
+    public GameObject bulletPrefab;  // Tiền tố của viên đạn
+    public Transform firePoint;      // Vị trí bắn
 
-    public NetworkRunner networkRunner;
+    public NetworkRunner networkRunner;  // NetworkRunner để quản lý mạng
 
     private void Update()
     {
+        // Kiểm tra nếu người chơi nhấn phím F
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if (networkRunner is not null && networkRunner.LocalPlayer.IsRealPlayer)
+            // Kiểm tra nếu NetworkRunner không phải null và người chơi là người thật
+            if (networkRunner != null && networkRunner.LocalPlayer.IsRealPlayer)
             {
+                // Tạo viên đạn trên mạng
                 var bullet = networkRunner.Spawn(bulletPrefab, firePoint.position, firePoint.rotation);
 
-                var bulletdirection = firePoint.forward;
-                bullet.GetComponent<Rigidbody>().AddForce(bulletdirection * 20f, ForceMode.Impulse);
+                // Lấy hướng di chuyển của viên đạn
+                var bulletDirection = firePoint.forward;
+
+                // Thêm lực vào Rigidbody của viên đạn để nó di chuyển
+                var rb = bullet.GetComponent<Rigidbody>();
+                if (rb != null)
+                {
+                    rb.AddForce(bulletDirection * 20f, ForceMode.Impulse);
+                }
             }
         }
     }
